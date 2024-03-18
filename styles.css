@@ -1,0 +1,91 @@
+body {
+    background-color: #C4C4C4;
+    border: none; /* Убираем границу у body */
+    margin: 0; /* Убираем внешние отступы */
+    padding: 0; /* Убираем внутренние отступы */
+    background-image: url('dLV1YXrtvxw.jpg'), url("5 пж.jpg");
+    background-size: 500px;
+    background-position: 560px 120px, 50px 400px;
+ 
+    background-repeat: no-repeat; /* Отключаем повторение фонового изображения */
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+#autocomplete #searchInput {
+    width: 495px;
+    height: 61px;
+    margin-top: 50px; /* Опустить на 50px вниз */
+    margin-left: 50px; /* Сдвинуть на 50px вправо */
+    border: none; /* Убрать рамку */
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black; /* Черный цвет текста */
+    
+}
+
+#repositoryList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#autocompleteList {
+    position: absolute;
+    width: 500px;
+    max-height: 200px; /* Ограничение высоты списка, чтобы он не становился слишком большим */
+    background-color:#E3E3E3;
+    z-index: 1; /* Устанавливаем индекс для размещения поверх других элементов */
+    padding: 0; /* Убираем внутренние отступы */
+    list-style-type: none; /* Убираем маркеры списка */
+    margin-top: 0px;
+    margin-left: 50px;
+}
+
+#autocompleteList li {
+    padding: 10px; /* Отступы внутри элементов списка */
+    cursor: pointer; /* Изменяем курсор при наведении на элемент */
+    border: 1px solid black; /* Черная граница между элементами списка */
+}
+
+
+#autocompleteList li:hover {
+    background-color: #65CDF9; /* Цвет фона при наведении */
+}
+
+.repo-info-container {
+    width: 479px;
+    height: 60px;
+    margin-top: -15px;
+    margin-left: 49px;
+    border: 1px solid #000000;
+    background: #E27BEB;
+    padding: 10px;
+}
+
+.repo-info-container {
+    position: relative; /* Устанавливаем позицию родительского контейнера как относительную */
+}
+
+.remove-button {
+    position: absolute; /* Устанавливаем позицию кнопки как абсолютную */
+    top: 28px; /* Отступ от верхнего края */
+    right: 20px; /* Отступ от правого края */
+}
+
+.remove-button {
+    position: absolute;
+    top: 28px;
+    right: 20px; 
+    color: red; /* Устанавливаем красный цвет */
+    background-color: transparent; /* Убираем фон у кнопки */
+    border: none; /* Убираем границу у кнопки */
+    font-size: 20px; /* Устанавливаем размер шрифта */
+    cursor: pointer; /* Указываем на то, что кнопка является интерактивной */
+}
